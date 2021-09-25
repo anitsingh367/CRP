@@ -18,6 +18,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body {
+  width: 100%;
+  background-color: var(--heading-color);
+}
 ul {
   list-style: none;
 }
@@ -34,7 +38,7 @@ nav {
   font-family: "Montserrat", sans-serif;
   padding: 0 5%;
   height: 75px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.041);
 }
 nav .links {
   padding: 0;
@@ -48,7 +52,7 @@ nav .links {
 nav .links a {
   display: block;
   padding: 1.3em;
-  font-size: 13.5px;
+  font-size: 15px;
   color: #fff;
   text-decoration: none;
   font-family: var(--sub-heading-font);
@@ -196,6 +200,7 @@ nav .icon-burger .line {
   font-weight: 300;
   margin-top: 10px;
   font-style: italic;
+  text-align: center;
 }
 .about-us .part2 .context {
   text-align: center;
@@ -220,6 +225,59 @@ nav .icon-burger .line {
   border: 3px solid var(--button-color);
 }
 /* about us styling ends */
+/* Services Section Styling starts */
+.services {
+  width: 100%;
+  height: 100%;
+  background-color: var(--heading-color);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.services .top-section {
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+.services .top-section h1 {
+  font-size: 60px;
+  font-family: var(--heading-font);
+  font-weight: 600;
+}
+.services .top-section h2 {
+  font-size: 25px;
+  font-family: var(--sub-heading-font);
+  font-weight: 400;
+  font-style: italic;
+}
+.services .card-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.services .card-section .card {
+  width: 230px;
+  height: 400px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+.services .card-section .card .card-img img {
+  width: 80px;
+  height: 80px;
+}
+/* Services Section Styling ends */
 /*For devices smaller than 786px*/
 @media screen and (max-width: 768px) {
   /* nav section styling Starts */
@@ -271,10 +329,13 @@ nav .icon-burger .line {
   /* hero section styling ends */
 }
 /* For devices smaller than 380px */
-@media screen and (max-width: 388px) {
+@media screen and (max-width: 380px) {
+  /* Nav Styling Starts */
+  /* Nav Styling Ends */
   /* Hero section starts */
-  .hero {
-    height: 100%;
+  .hero .container {
+    width: 100%;
+    padding: 20px;
   }
   /* Hero section ends */
 }
