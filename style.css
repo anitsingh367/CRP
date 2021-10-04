@@ -11,7 +11,7 @@
   --sub-heading-font: "Open Sans", sans-serif;
   --vibrant-color: #51e1ed;
   --button-color: #022020;
-  --page-center: 0 5%;
+  --page-center: 0 10%;
 }
 * {
   margin: 0;
@@ -182,68 +182,60 @@ nav .icon-burger .line {
 .socials img {
   width: 50px;
   height: 50px;
-  /* background-color: #5e6e75; */
-
   padding: 10px;
   margin: 0 5px;
 }
 /*herosectioncssEnds*/
 /* about us styling starts */
 .about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--heading-color);
+  padding: var(--page-center);
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
-.about-us .part1 {
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
+.about-us .about-us-img-container {
+  height: 80%;
 }
-.about-us .part2 {
+.about-us .about-us-content {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   flex-direction: column;
-  width: 95%;
-  padding: 20px;
-  margin: 0 auto;
-  color: #fff;
+  justify-content: flex-start;
+  padding-top: 3%;
+  color: black;
+  gap: 30px;
 }
-.about-us .part2 .heading {
-  font-size: 60px;
+.about-us .about-us-content .heading {
+  font-size: 3.5rem;
   font-family: var(--heading-font);
   font-weight: 400;
   text-transform: uppercase;
 }
-.about-us .part2 .sub-heading {
+.about-us .about-us-content .sub-heading {
   font-family: var(--sub-heading-font);
-  font-size: 25px;
-  font-weight: 300;
-  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
   font-style: italic;
-  text-align: center;
 }
-.about-us .part2 .context {
-  text-align: center;
-  font-size: 14px;
+.about-us .about-us-content .context {
+  font-size: 1.5rem;
   font-family: var(--sub-heading-font);
-  font-weight: 100;
-  width: 80%;
+  font-weight: 300;
 }
-.about-us .part2 a {
+.about-us .about-us-content a {
   color: var(--vibrant-color);
-  font-size: 18px;
+  font-size: 1.2rem;
   font-family: var(--sub-heading-font);
-  font-weight: 600;
-  margin-top: 30px;
+  font-weight: 500;
   padding: 10px 40px;
-  background-color: var(--button-color);
   border: 3px solid var(--vibrant-color);
+  width: max-content;
+  transition: all 0.25s ease-out;
 }
-.about-us .part2 a:hover {
+.about-us .about-us-content a:hover {
   background-color: var(--vibrant-color);
   color: var(--button-color);
   border: 3px solid var(--button-color);
