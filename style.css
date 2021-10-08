@@ -372,7 +372,7 @@ nav .icon-burger .line {
 .info {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 5rem;
   width: 100%;
   height: 100%;
@@ -386,7 +386,7 @@ nav .icon-burger .line {
   flex-direction: column;
   gap: 1rem;
   color: white;
-  flex-basis: 50%;
+  flex: 0 0 40%;
 }
 .info .location-and-form .locate-us {
   display: flex;
@@ -401,7 +401,7 @@ nav .icon-burger .line {
 }
 .info .location-and-form .locate-us .sub-heading {
   font-family: var(--sub-heading-font);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   font-style: italic;
   width: 25%;
@@ -430,20 +430,44 @@ nav .icon-burger .line {
 .info .location-and-form .contact-us .form input,
 textarea {
   color: white;
-  background: rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 1px 2px 8px rgba(255, 255, 255, 0.07);
+  outline: none;
+  padding: 0.6em 1.45em 0.7em;
+  transition: 0.18s ease-out;
+}
+.info .location-and-form .contact-us .form input {
+  width: 500px;
 }
 .form .name,
-.form .email,
-.form .comment {
+.form .email {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  /* gap: 5rem; */
 }
 .form .comment {
+  display: flex;
   flex-direction: column;
 }
 .map {
-  flex: 0 0 50%;
+  flex: 0 0 60%;
+}
+.info .location-and-form .contact-us .form a {
+  color: white;
+  font-size: 1.2rem;
+  font-family: var(--sub-heading-font);
+  font-weight: 500;
+  padding: 10px 40px;
+  border: 3px solid var(--vibrant-color);
+  width: max-content;
+  transition: all 0.25s ease-out;
+}
+.info .location-and-form .contact-us .form a:hover {
+  background-color: var(--vibrant-color);
+  color: var(--button-color);
+  border: 3px solid var(--button-color);
 }
 
 /* Services Section Styling ends */
