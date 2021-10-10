@@ -9,7 +9,7 @@
   --hero-heading-font: "Archivo Black", sans-serif;
   --heading-font: "Oswald", sans-serif;
   --sub-heading-font: "Open Sans", sans-serif;
-  --vibrant-color: #51e1ed;
+  --vibrant-color: #13aff0;
   --button-color: #022020;
   --page-center: 0 10%;
 }
@@ -31,6 +31,11 @@ a {
   text-decoration: none;
 }
 /* nav Styling Starts */
+.nav-scrolled {
+  color: var(--vibrant-color);
+  background-color: rgba(0, 0, 0, 0.699);
+  transition: all 0.5s ease-in-out;
+}
 nav {
   position: fixed;
   z-index: 1;
@@ -57,7 +62,7 @@ nav .links a {
   position: relative;
 }
 nav .links a:hover {
-  color: #13aff0;
+  color: var(--vibrant-color);
   transition: all 0.25s ease-out;
 }
 nav .links a::after {
