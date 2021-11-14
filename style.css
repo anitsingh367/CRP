@@ -373,12 +373,11 @@ nav .icon-burger .line {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 3rem;
   width: 100%;
   height: 100%;
-  padding: var(--page-center);
-  padding-top: 3%;
-  padding-bottom: 3%;
+  margin: auto;
+  padding: 5%;
   background-color: var(--heading-color);
 }
 .info .location-and-form {
@@ -452,7 +451,7 @@ textarea {
   flex-direction: column;
 }
 .map {
-  flex: 0 0 60%;
+  width: 100%;
 }
 .info .location-and-form .contact-us .form a {
   color: white;
@@ -471,6 +470,16 @@ textarea {
 }
 
 /* Services Section Styling ends */
+@media screen and (max-width: 1100px) {
+  .info {
+    flex-direction: column;
+  }
+  .form .name,
+  .form .email {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
 /*For devices smaller than 786px*/
 @media screen and (max-width: 768px) {
   /* nav section styling Starts */
@@ -520,6 +529,37 @@ textarea {
     height: 50vh;
   }
   /* hero section styling ends */
+  /* Card Section */
+  .areas .card-section {
+    width: 100%;
+  }
+  /* Info Styling starts*/
+  .info {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .info .location-and-form .locate-us .heading {
+    font-size: 3rem;
+  }
+  .info .location-and-form .contact-us .heading {
+    font-size: 3rem;
+  }
+  .info .location-and-form .contact-us .form input {
+    width: 250px;
+  }
+  .form .name,
+  .form .email {
+    flex-direction: column;
+  }
+  .form .comment {
+    width: 250px;
+  }
+  .map {
+    width: 80%;
+    height: 100vh;
+    padding: 0;
+  }
+  /* Info Styling ends*/
 }
 /* For devices smaller than 380px */
 @media screen and (max-width: 380px) {
