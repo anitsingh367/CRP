@@ -621,6 +621,7 @@ a {
     opacity: 0;
   }
   /* nav section styling ends */
+
   /* hero section styling starts */
   .hero {
     width: 100%;
@@ -630,6 +631,37 @@ a {
     height: 50vh;
   }
   /* hero section styling ends */
+  /* Card Section */
+  .areas .card-section {
+    width: 100%;
+  }
+  /* Info Styling starts*/
+  .info {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .info .location-and-form .locate-us .heading {
+    font-size: 3rem;
+  }
+  .info .location-and-form .contact-us .heading {
+    font-size: 3rem;
+  }
+  .info .location-and-form .contact-us .form input {
+    width: 250px;
+  }
+  .form .name,
+  .form .email {
+    flex-direction: column;
+  }
+  .form .comment {
+    width: 250px;
+  }
+  .map {
+    width: 80%;
+    height: 100vh;
+    padding: 0;
+  }
+  /* Info Styling ends*/
 }
 /* For devices smaller than 380px */
 @media screen and (max-width: 380px) {
@@ -641,4 +673,17 @@ a {
     padding: 20px;
   }
   /* Hero section ends */
+   /* area section */
+   .areas .card-section .card .card-img {
+    width: 275px;
+  }
+  /* area section */
+  /* info section */
+  .info {
+    margin: auto;
+  }
+  .map {
+    width: 100%;
+  }
+  /* info section */
 }
