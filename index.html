@@ -224,7 +224,6 @@
       <div class="map">
         <iframe
           width="100%"
-          height="100%"
           src="https://www.google.com/maps/d/u/0/embed?mid=1KH97jwxuDTpbTctrnSPK0OdoPs3PO06k"
         ></iframe>
       </div>
@@ -297,50 +296,58 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+    <section class="footer">
+      <span class="socials">
+        <div class="heading"><h1 id="heading">Connect with Us</h1></div>
+        <div class="links">
+          <div class="flex-row">
+            <i class="fab fa-facebook"></i><a href="#">Facebook</a>
+          </div>
 
+          <div class="flex-row">
+            <i class="fab fa-instagram"></i><a href="#">Instagram</a>
+          </div>
+
+          <div class="flex-row">
+            <i class="fab fa-whatsapp"></i><a href="#">Whatsapp</a>
+          </div>
+
+          <div class="flex-row">
+            <img class="fa-justdial" src="./just-dial.svg" alt="" /><a href="#"
+              >Just Dial</a
+            >
+          </div>
+
+          <div class="flex-row">
+            <img class="fa-housing" src="./Housing.svg" alt="" /><a href="#"
+              >Housing</a
+            >
+          </div>
+
+          <div class="flex-row">
+            <img class="fa-99acres" src="./99 acres.svg" alt="" /><a href="#"
+              >99 acres</a
+            >
+          </div>
+        </div>
+      </span>
+      <div class="address">
+        <h1 class="heading">CRP</h1>
+        <h2 class="sub-heading">Club Road Properties</h2>
+        <ul class="phone-numbers">
+          <li><i class="fas fa-phone"> +91 9910199155 </i></li>
+          <li><i class="fas fa-phone"> +91 9999766699 </i></li>
+          <li class="venue">
+            26-North West Avenue, Club Road, Next to Bikanerwala, Punjabi Bagh,
+            Delhi, 110026.
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 4500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      const header = document.querySelector("nav");
-      const sectionOne = document.querySelector(".hero");
-
-      const sectionOneOptions = {
-        rootMargin: "-100px 0px 0px 0px",
-      };
-
-      const sectionOneObserver = new IntersectionObserver(function (
-        entries,
-        sectionOneObserver
-      ) {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            header.classList.add("nav-scrolled");
-          } else {
-            header.classList.remove("nav-scrolled");
-          }
-        });
-      },
-      sectionOneOptions);
-
-      sectionOneObserver.observe(sectionOne);
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
