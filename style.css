@@ -771,6 +771,9 @@ a:hover {
   .areas .card-section {
     flex-direction: column;
   }
+  .areas .card-section .card {
+    padding: 0;
+  }
   /* Info Styling starts*/
   .info {
     flex-direction: column;
