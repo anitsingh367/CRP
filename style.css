@@ -215,10 +215,7 @@ nav .icon-burger .line {
   margin: 0 5px;
   transition: all 0.4s ease-in-out;
 }
-.hero .container .socials i:hover,
-img:hover {
-  transform: scale(1.06);
-}
+
 /*herosectioncssEnds*/
 /* about us styling starts */
 .about-us {
@@ -691,11 +688,7 @@ a {
   padding: 10px;
   margin: 10px 5px;
 }
-.footer .socials i:hover,
-img:hover,
-a:hover {
-  transform: scale(1.06);
-}
+
 .footer .address .heading {
   font-size: 3.5rem;
   font-family: var(--heading-font);
@@ -765,8 +758,8 @@ a:hover {
   }
   /* hero section styling ends */
   /* Card Section */
-  .areas .card-section {
-    width: 100%;
+  .areas {
+    padding: 0;
   }
   .areas .card-section {
     flex-direction: column;
