@@ -30,6 +30,29 @@ ul {
 a {
   text-decoration: none;
 }
+/* btnScrollTop */
+#btnScrollTop {
+  display: none;
+  outline: navajowhite;
+  position: fixed;
+  z-index: 12;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.877);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.041);
+  cursor: pointer;
+  border: none;
+  margin: auto;
+  color: #fff;
+  transition: all 0.4s ease-in;
+}
+.btnScrollTop {
+  transition: all 0.4s ease-in-out;
+}
+/* btnScrollTop */
 /* nav Styling Starts */
 .nav-scrolled {
   color: var(--vibrant-color);
@@ -159,6 +182,7 @@ nav .icon-burger .line {
   padding: 20px;
   font-size: 24px;
   color: #fff;
+  transition: all 0.4s ease-in-out;
 }
 .hero .container .socials .fa-facebook {
   background-color: #354f8e;
@@ -189,6 +213,11 @@ nav .icon-burger .line {
   height: 50px;
   padding: 10px;
   margin: 0 5px;
+  transition: all 0.4s ease-in-out;
+}
+.hero .container .socials i:hover,
+img:hover {
+  transform: scale(1.06);
 }
 /*herosectioncssEnds*/
 /* about us styling starts */
@@ -588,7 +617,7 @@ a {
   align-items: flex-start;
   width: 100%;
   height: 100%;
-  background-color: #002344;
+  background-color: var(--heading-color);
   color: #fff;
   padding: var(--page-center);
 }
@@ -609,12 +638,19 @@ a {
   font-size: 24px;
   color: #fff;
   margin: 0 5px;
+  transition: all 0.4s ease-in-out;
 }
 .footer .flex-row {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 5px;
+}
+.footer .flex-row a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
 }
 .footer .socials .fa-facebook {
   background-color: #354f8e;
@@ -655,6 +691,11 @@ a {
   padding: 10px;
   margin: 10px 5px;
 }
+.footer .socials i:hover,
+img:hover,
+a:hover {
+  transform: scale(1.06);
+}
 .footer .address .heading {
   font-size: 3.5rem;
   font-family: var(--heading-font);
@@ -671,7 +712,7 @@ a {
   font-size: 18px;
 }
 .footer .venue {
-  width: 30%;
+  width: 70%;
 }
 /*For devices smaller than 786px*/
 @media screen and (max-width: 768px) {
@@ -734,6 +775,7 @@ a {
   .info {
     flex-direction: column;
     padding: 20px;
+    height: 100%;
   }
   .info .location-and-form .locate-us .heading {
     font-size: 3rem;
@@ -765,6 +807,11 @@ a {
     margin: auto;
   }
   /* Info Styling ends*/
+  /* testimonial */
+  .testimonial {
+    padding: 0;
+  }
+  /* testimonial */
   /* Footer */
   .footer {
     flex-direction: column;
@@ -810,6 +857,13 @@ a {
     flex-direction: column;
   }
   /* area section */
+  /* testimonial */
+  .testimonial .top-section .sub-heading {
+    text-align: center;
+  }
+  .swiper-pagination {
+    bottom: 6% !important;
+  }
   /* info section */
   .info {
     margin: auto;

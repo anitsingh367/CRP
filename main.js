@@ -38,3 +38,16 @@ const header = document.querySelector("nav");
       sectionOneOptions);
 
       sectionOneObserver.observe(sectionOne);
+// #btnScrollTop
+const btnScrollTop = document.querySelector('#btnScrollTop')
+btnScrollTop.addEventListener('click', ()=>{
+  window.scrollTo(0,0)
+})
+window.onscroll = function (){scroll()}
+function scroll(){
+  if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+    btnScrollTop.style.display = "block"
+  }else{
+    btnScrollTop.style.display = "none"
+  }
+}
