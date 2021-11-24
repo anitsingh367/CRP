@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Club Road Properties is a one stop shop for all your property related needs. We offer you the best in class service combined with our friendly yet professional nature."
+    />
     <!-- Swiper Js -->
     <link
       rel="stylesheet"
@@ -21,6 +25,10 @@
     <title>CRP-Club Road Properties - Club Road Properties</title>
   </head>
   <body>
+    <!-- Scroll To Up Btn -->
+    <button id="btnScrollTop">
+      <i class="fas fa-chevron-up"></i>
+    </button>
     <!-- NavBar Section Starts -->
     <nav class="nav-scrolled">
       <input id="nav-toggle" type="checkbox" />
@@ -46,17 +54,41 @@
         <h1 class="heading">CRP</h1>
         <h3 class="sub-heading">CLUB ROAD PROPERTIES</h3>
         <span class="socials">
-          <i class="fab fa-facebook"></i>
+          <a
+            href="https://www.facebook.com/Club-Road-Properties-102995355159564"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
 
-          <i class="fab fa-instagram"></i>
+          <a
+            href="https://www.instagram.com/clubroadproperties/?igshid=sste20wus23j"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i
+          ></a>
 
-          <i class="fab fa-whatsapp"></i>
+          <a href=" https://wa.me/+919999766699" target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
 
-          <img class="fa-justdial" src="./just-dial.svg" alt="" />
+          <a
+            href="https://www.justdial.com/Delhi/Club-Road-Properties-West-Punjabi-Bagh/011PXX11-XX11-130715132743-K8F2_BZDET?via=scode"
+            target="_blank"
+            ><img class="fa-justdial" src="./just-dial.svg" alt="JD"
+          /></a>
 
-          <img class="fa-housing" src="./Housing.svg" alt="" />
+          <a
+            href="https://housing.com/agents/search-A1mc821m8zezsxizke81rsmfm8"
+            target="_blank"
+            ><img class="fa-housing" src="./Housing.svg" alt="Housing"
+          /></a>
 
-          <img class="fa-99acres" src="./99 acres.svg" alt="" />
+          <a
+            href="https://www.99acres.com/club-road-properties-west-delhi-drid-15130947"
+            target="_blank"
+          >
+            <img class="fa-99acres" src="./99 acres.svg" alt="99acres"
+          /></a>
         </span>
       </div>
     </div>
@@ -82,7 +114,7 @@
     </section>
 
     <!-- service section starts -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="top-section">
         <h1 class="heading">our services</h1>
         <h2 class="sub-heading">what we do?</h2>
@@ -136,7 +168,7 @@
       </div>
     </section>
     <!-- service section ends -->
-    <section class="areas">
+    <section class="areas" id="areas">
       <div class="top-section">
         <h1 class="heading">Areas we deal in</h1>
         <h2 class="sub-heading">Where all we work</h2>
@@ -193,7 +225,7 @@
       </div>
     </section>
     <!-- INfo Section -->
-    <section class="info">
+    <section class="info" id="locate">
       <div class="location-and-form">
         <div class="locate-us">
           <h1 class="heading">locate us</h1>
@@ -223,9 +255,12 @@
       </div>
       <div class="map">
         <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.770358852396!2d77.12032051508336!3d28.66659388240439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f42fe62664b6c8b!2sClub%20Road%20Properties!5e0!3m2!1sen!2sin!4v1637506327603!5m2!1sen!2sin"
           width="100%"
           height="100%"
-          src="https://www.google.com/maps/d/u/0/embed?mid=1KH97jwxuDTpbTctrnSPK0OdoPs3PO06k"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
         ></iframe>
       </div>
     </section>
@@ -297,50 +332,83 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+    <!-- footer -->
+    <section class="footer" id="contact">
+      <span class="socials">
+        <div class="heading"><h1 id="heading">Connect with Us</h1></div>
+        <div class="links">
+          <div class="flex-row">
+            <a
+              href="https://www.facebook.com/Club-Road-Properties-102995355159564"
+              target="_blank"
+              ><i class="fab fa-facebook"></i>Facebook</a
+            >
+          </div>
 
+          <div class="flex-row">
+            <a
+              href="https://www.instagram.com/clubroadproperties/?igshid=sste20wus23j"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>Instagram</a
+            >
+          </div>
+
+          <div class="flex-row">
+            <a href=" https://wa.me/+919999766699" target="_blank"
+              ><i class="fab fa-whatsapp"></i>Whatsapp</a
+            >
+          </div>
+
+          <div class="flex-row">
+            <a
+              href="https://www.justdial.com/Delhi/Club-Road-Properties-West-Punjabi-Bagh/011PXX11-XX11-130715132743-K8F2_BZDET?via=scode"
+              target="_blank"
+              ><img class="fa-justdial" src="./just-dial.svg" alt="JD" />Just
+              Dial</a
+            >
+          </div>
+
+          <div class="flex-row">
+            <a
+              href="https://housing.com/agents/search-A1mc821m8zezsxizke81rsmfm8"
+              target="_blank"
+              ><img
+                class="fa-housing"
+                src="./Housing.svg"
+                alt="Housing"
+              />Housing.com</a
+            >
+          </div>
+
+          <div class="flex-row">
+            <a
+              href="https://www.99acres.com/club-road-properties-west-delhi-drid-15130947"
+              target="_blank"
+            >
+              <img class="fa-99acres" src="./99 acres.svg" alt="99acres" />99
+              Acres</a
+            >
+          </div>
+        </div>
+      </span>
+      <div class="address">
+        <h1 class="heading">CRP</h1>
+        <h2 class="sub-heading">Club Road Properties</h2>
+        <ul class="phone-numbers">
+          <li><i class="fas fa-phone"> +91 9910199155 </i></li>
+          <li><i class="fas fa-phone"> +91 9999766699 </i></li>
+          <li class="venue">
+            26-North West Avenue, Club Road, Next to Bikanerwala, Punjabi Bagh,
+            Delhi, 110026.
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 4500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      const header = document.querySelector("nav");
-      const sectionOne = document.querySelector(".hero");
-
-      const sectionOneOptions = {
-        rootMargin: "-100px 0px 0px 0px",
-      };
-
-      const sectionOneObserver = new IntersectionObserver(function (
-        entries,
-        sectionOneObserver
-      ) {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            header.classList.add("nav-scrolled");
-          } else {
-            header.classList.remove("nav-scrolled");
-          }
-        });
-      },
-      sectionOneOptions);
-
-      sectionOneObserver.observe(sectionOne);
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

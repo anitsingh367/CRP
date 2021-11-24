@@ -30,6 +30,29 @@ ul {
 a {
   text-decoration: none;
 }
+/* btnScrollTop */
+#btnScrollTop {
+  display: none;
+  outline: navajowhite;
+  position: fixed;
+  z-index: 12;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.877);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.041);
+  cursor: pointer;
+  border: none;
+  margin: auto;
+  color: #fff;
+  transition: all 0.4s ease-in;
+}
+.btnScrollTop {
+  transition: all 0.4s ease-in-out;
+}
+/* btnScrollTop */
 /* nav Styling Starts */
 .nav-scrolled {
   color: var(--vibrant-color);
@@ -38,7 +61,7 @@ a {
 }
 nav {
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   right: 0;
   top: 0;
@@ -159,6 +182,7 @@ nav .icon-burger .line {
   padding: 20px;
   font-size: 24px;
   color: #fff;
+  transition: all 0.4s ease-in-out;
 }
 .hero .container .socials .fa-facebook {
   background-color: #354f8e;
@@ -189,7 +213,9 @@ nav .icon-burger .line {
   height: 50px;
   padding: 10px;
   margin: 0 5px;
+  transition: all 0.4s ease-in-out;
 }
+
 /*herosectioncssEnds*/
 /* about us styling starts */
 .about-us {
@@ -581,6 +607,106 @@ a {
   color: #03203c;
   font-size: 18px;
 }
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: var(--heading-color);
+  color: #fff;
+  padding: var(--page-center);
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.footer .socials i {
+  padding: 20px;
+  font-size: 24px;
+  color: #fff;
+  margin: 0 5px;
+  transition: all 0.4s ease-in-out;
+}
+.footer .flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+.footer .flex-row a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+.footer .socials .fa-facebook {
+  background-color: #354f8e;
+  clip-path: circle(40%);
+}
+.footer .socials .fa-instagram {
+  background-color: #222222;
+  clip-path: circle(40%);
+}
+.footer .socials .fa-whatsapp {
+  background-color: #21bd5b;
+  clip-path: circle(40%);
+}
+.footer .socials .fa-justdial {
+  background-color: white;
+  clip-path: circle(50%);
+}
+.footer .socials .fa-housing {
+  background-color: #fddb00;
+  clip-path: circle(50%);
+}
+.footer .socials .fa-99acres {
+  background-color: white;
+  clip-path: circle(50%);
+}
+.footer .socials .links {
+  display: flex;
+  width: 70%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+.socials img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px 5px;
+}
+
+.footer .address .heading {
+  font-size: 3.5rem;
+  font-family: var(--heading-font);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.footer .address .sub-heading {
+  font-family: var(--sub-heading-font);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.footer li {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.footer .venue {
+  width: 70%;
+}
 /*For devices smaller than 786px*/
 @media screen and (max-width: 768px) {
   /* nav section styling Starts */
@@ -632,19 +758,33 @@ a {
   }
   /* hero section styling ends */
   /* Card Section */
+  .areas {
+    padding: 0;
+  }
   .areas .card-section {
-    width: 100%;
+    flex-direction: column;
+  }
+  .areas .card-section .card {
+    padding: 0;
   }
   /* Info Styling starts*/
   .info {
     flex-direction: column;
     padding: 20px;
+    height: 100%;
   }
   .info .location-and-form .locate-us .heading {
     font-size: 3rem;
   }
   .info .location-and-form .contact-us .heading {
     font-size: 3rem;
+  }
+  .info .location-and-form .contact-us {
+    justify-content: center;
+    align-items: center;
+  }
+  .info .location-and-form .contact-us .form a {
+    margin: auto;
   }
   .info .location-and-form .contact-us .form input {
     width: 250px;
@@ -660,8 +800,34 @@ a {
     width: 80%;
     height: 100vh;
     padding: 0;
+    margin: auto;
   }
   /* Info Styling ends*/
+  /* testimonial */
+  .testimonial {
+    padding: 0;
+  }
+  /* testimonial */
+  /* Footer */
+  .footer {
+    flex-direction: column;
+  }
+  .footer .socials .links {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding: var(--page-center);
+  }
+  .footer .address {
+    text-align: center;
+  }
+  .footer .address .venue {
+    width: 100%;
+  }
 }
 /* For devices smaller than 380px */
 @media screen and (max-width: 380px) {
@@ -671,19 +837,43 @@ a {
   .hero .container {
     width: 100%;
     padding: 20px;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  .hero .container .socials {
+    height: 100%;
   }
   /* Hero section ends */
-   /* area section */
-   .areas .card-section .card .card-img {
+  /* area section */
+  .areas .card-section .card .card-img {
     width: 275px;
   }
+  .areas .card-section {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
   /* area section */
+  /* testimonial */
+  .testimonial .top-section .sub-heading {
+    text-align: center;
+  }
+  .swiper-pagination {
+    bottom: 6% !important;
+  }
   /* info section */
   .info {
     margin: auto;
   }
-  .map {
+  .info .map {
     width: 100%;
+    height: 100vh;
+  }
+  .info .location-and-form .contact-us {
+    justify-content: center;
+    align-items: center;
+  }
+  .info .location-and-form .contact-us .form a {
+    margin: auto;
   }
   /* info section */
 }
