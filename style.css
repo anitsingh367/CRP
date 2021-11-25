@@ -482,7 +482,8 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-.info .location-and-form .contact-us .form a {
+.info .location-and-form .contact-us .form button {
+  background-color: var(--heading-color);
   color: white;
   font-size: 1.2rem;
   font-family: var(--sub-heading-font);
@@ -492,7 +493,7 @@ textarea {
   width: max-content;
   transition: all 0.25s ease-out;
 }
-.info .location-and-form .contact-us .form a:hover {
+.info .location-and-form .contact-us .form button:hover {
   background-color: var(--vibrant-color);
   color: var(--button-color);
   border: 3px solid var(--button-color);
