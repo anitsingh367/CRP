@@ -482,7 +482,8 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-.info .location-and-form .contact-us .form a {
+.info .location-and-form .contact-us .form button {
+  background-color: var(--heading-color);
   color: white;
   font-size: 1.2rem;
   font-family: var(--sub-heading-font);
@@ -492,7 +493,7 @@ textarea {
   width: max-content;
   transition: all 0.25s ease-out;
 }
-.info .location-and-form .contact-us .form a:hover {
+.info .location-and-form .contact-us .form button:hover {
   background-color: var(--vibrant-color);
   color: var(--button-color);
   border: 3px solid var(--button-color);
@@ -599,7 +600,6 @@ textarea {
   padding: 10px;
 }
 #info {
-  /* font-family: "Dancing Script", cursive; */
   letter-spacing: 2px;
 }
 a {
@@ -617,10 +617,22 @@ a {
   background-color: var(--heading-color);
   color: #fff;
   padding: var(--page-center);
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.footer .heading {
+  font-size: 2.5rem;
+  font-family: var(--heading-font);
+  font-weight: normal;
+  text-transform: uppercase;
 }
 .footer a {
   text-decoration: none;
   color: #fff;
+  font-family: var(--sub-heading-font);
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
 }
 .footer .socials {
   display: flex;
@@ -628,7 +640,6 @@ a {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 10px;
 }
 .footer .socials i {
   padding: 20px;
@@ -705,15 +716,18 @@ a {
   font-size: 18px;
 }
 .footer .venue {
+  font-family: var(--sub-heading-font);
   width: 70%;
 }
 /*For devices smaller than 786px*/
 @media screen and (max-width: 768px) {
   /* nav section styling Starts */
+  :root {
+    --page-center: 0 5%;
+  }
   nav .links {
     float: none;
     position: fixed;
-    /* z-index: 9; */
     left: 0;
     right: 0;
     top: 50px;
@@ -757,6 +771,9 @@ a {
     height: 50vh;
   }
   /* hero section styling ends */
+  .services .card-section {
+    gap: 1rem;
+  }
   /* Card Section */
   .areas {
     padding: 0;
@@ -770,37 +787,27 @@ a {
   /* Info Styling starts*/
   .info {
     flex-direction: column;
-    padding: 20px;
-    height: 100%;
-  }
-  .info .location-and-form .locate-us .heading {
-    font-size: 3rem;
-  }
-  .info .location-and-form .contact-us .heading {
-    font-size: 3rem;
-  }
-  .info .location-and-form .contact-us {
     justify-content: center;
+  }
+  .info .location-and-form .locate-us {
     align-items: center;
   }
-  .info .location-and-form .contact-us .form a {
-    margin: auto;
+  .info .location-and-form .contact-us {
+    align-items: center;
   }
   .info .location-and-form .contact-us .form input {
-    width: 250px;
+    width: 300px;
   }
   .form .name,
   .form .email {
     flex-direction: column;
   }
   .form .comment {
-    width: 250px;
+    width: 300px;
   }
   .map {
-    width: 80%;
-    height: 100vh;
-    padding: 0;
-    margin: auto;
+    flex-basis: unset;
+    height: 50vh;
   }
   /* Info Styling ends*/
   /* testimonial */
@@ -831,6 +838,9 @@ a {
 }
 /* For devices smaller than 380px */
 @media screen and (max-width: 380px) {
+  :root {
+    --page-center: 0 1%;
+  }
   /* Nav Styling Starts */
   /* Nav Styling Ends */
   /* Hero section starts */
@@ -844,6 +854,9 @@ a {
     height: 100%;
   }
   /* Hero section ends */
+  .about-us .about-us-img-container {
+    height: 30vh;
+  }
   /* area section */
   .areas .card-section .card .card-img {
     width: 275px;
@@ -853,6 +866,12 @@ a {
     flex-direction: column;
   }
   /* area section */
+  .info .location-and-form .locate-us .sub-heading {
+    width: 50%;
+  }
+  .map {
+    height: 50vh;
+  }
   /* testimonial */
   .testimonial .top-section .sub-heading {
     text-align: center;
@@ -860,20 +879,8 @@ a {
   .swiper-pagination {
     bottom: 6% !important;
   }
-  /* info section */
-  .info {
-    margin: auto;
+  /* footer */
+  .footer .heading {
+    font-size: 2rem;
   }
-  .info .map {
-    width: 100%;
-    height: 100vh;
-  }
-  .info .location-and-form .contact-us {
-    justify-content: center;
-    align-items: center;
-  }
-  .info .location-and-form .contact-us .form a {
-    margin: auto;
-  }
-  /* info section */
 }
